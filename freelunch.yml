@@ -29,7 +29,7 @@ outputs:
     user: flci::kube_user
     token: flci::kube_token
     client_certificate: flci::kube_client_certificate
-    server: flci::kube_server
+    #server: flci::kube_server
     kube_config_path: ~/.kube/config
     kube_selector: app=example-web-app
     kube_rc_path: k8s/example-web-app-rc.yml
