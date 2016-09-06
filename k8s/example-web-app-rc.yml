@@ -21,7 +21,7 @@ spec:
         image: 703587889398.dkr.ecr.us-east-1.amazonaws.com/example-web-app:green
         ports:
         - name: appport
-          containerPort: 3000
+          containerPort: 5000
         volumeMounts:
          - name: docker-sock
            mountPath: /var/run/docker.sock
