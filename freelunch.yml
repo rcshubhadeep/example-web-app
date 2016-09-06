@@ -26,10 +26,10 @@ outputs:
     repository: example-web-app:green
 
   - type: kube
-    #user: flci::kube_user
-    #token: flci::kube_token
+    user: admin
+    token: MvHvDiz9ixYIJmFCHZm4BFgDlKBcS0UZ
     #client_certificate: flci::kube_client_certificate
-    #server: flci::kube_server
+    server: https://50.16.94.175
     kube_config_path: ~/.kube/config
     kube_selector: app=example-web-app
     kube_rc_path: k8s/example-web-app-rc.yml
