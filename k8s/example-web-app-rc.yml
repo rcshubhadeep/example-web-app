@@ -8,7 +8,7 @@ spec:
   replicas: 1
   selector:
     app: example-web-app
-    version: green
+    version: v0.1.13
   template:
     metadata:
       labels:
