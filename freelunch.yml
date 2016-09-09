@@ -1,7 +1,7 @@
 ---
 
 builds:
-  docker_image_name: FreeLunchCI/example-web-app:latest
+  docker_image_name: FreeLunchCI/example-web-app:v0.1.17
 
 services:
   db:
@@ -10,7 +10,8 @@ services:
     - "5432:5432"
 web:
   build: .
-  command: bin/rails server --port 3000 --binding 0.0.0.0
+  #command: bin/rails server --port 3000 --binding 0.0.0.0
+  command: python -u run.py
   ports:
     - "5000:5000"
 links:
@@ -21,9 +22,9 @@ volumes:
 outputs:
 
   - type: ecr
-    image: FreeLunchCI/example-web-app:latest
+    image: FreeLunchCI/example-web-app:v0.1.17
     registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com
-    repository: example-web-app:latest
+    repository: example-web-app:v0.1.17
 
   - type: kube
     # currently there are two options for defining your kube auth info; config and manual:
