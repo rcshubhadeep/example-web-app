@@ -16,9 +16,9 @@ spec:
         version: green
     spec:
       containers:
-      - name: example-web-app
+      - name: example-web-app-green
         imagePullPolicy: Always
-        image: 703587889398.dkr.ecr.us-east-1.amazonaws.com/example-web-app:green
+        image: 703587889398.dkr.ecr.us-east-1.amazonaws.com/example-web-app:latest
         ports:
         - name: appport
           containerPort: 5000
