@@ -26,7 +26,7 @@ outputs:
     registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com
     repository: example-web-app
 
-#  - type: kube
+  - type: kube
     # currently there are two options for defining your kube auth info; config and manual:
     #  - config: set the kube_config_path to the location of your config info
     #  - manual: set the server, user, token, and client_certificate manually
@@ -35,13 +35,13 @@ outputs:
     #    - token: the kubernetes token (~/.kube/config path: users/user/token)
     #    - client_certificate: the kubernetes client certificate (~/.kube/config path: users/user/client-key-data)
     # below was built off of data in engine/outputs/kube.py auth function
-#    server: https://50.16.94.175
-#    user: aws_kubernetes
-#    token: MvHvDiz9ixYIJmFCHZm4BFgDlKBcS0UZ
-#    client_certificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURXVENDQWtHZ0F3SUJBZ0lKQUxCR0x0NHgzMHZLTUEwR0NTcUdTSWIzRFFFQkN3VUFNQ0l4SURBZUJnTlYKQkFNVUZ6VXdMakUyTGprMExqRTNOVUF4TkRZek9USTRNelEwTUI0WERURTJNRFV5TWpFME5EVTBOVm9YRFRJMgpNRFV5TURFME5EVTBOVm93SWpFZ01CNEdBMVVFQXhRWE5UQXVNVFl1T1RRdU1UYzFRREUwTmpNNU1qZ3pORFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUN5NnBubjIwSk10c2g5ckFrMGZJY3gKTFJDL2duVUY1WTJaSnFmekRpa3dOeUsydHZnWjVNdk5YZ09FYVdac29TbjNLRmV3cW1NbEJlZUU1VkYvY2NrUgpyMlFxdGtUWjJ3aGVKeXZKa296Uk0vN3J5U3lia2JRbm1BaVlueW5WODEvNFhHbldRT0xEK2o2aHV5eWZIZkZwCmQyZ1plYWo3NnpOTW90dHpnNm5zVXZEcmx2ZFlRcGlVekIxeThBdlRGTUZFNlI0alBwamV1LzVjZnlkYkc0aWwKYzR3d2xaMTU3SC9SNVdueGlIY2xZdHordDZXTzQxQlpBWkR4b0lDWW0zY0JYRFdlWTFhMXJ4K0FUdU1yQWJwZQpoOVRNK1g3WW9DV09kdDl0UDRWQnpTS2hHL1I3YXVzZU5YMFN2NEFEUWFPOXA5U21sdmlKdFFjZjdsdVFFUmN0CkFnTUJBQUdqZ1pFd2dZNHdIUVlEVlIwT0JCWUVGS3pjRHRsNnc5ZXo0UUlRSDZQWXRnbjRnQm5rTUZJR0ExVWQKSXdSTE1FbUFGS3pjRHRsNnc5ZXo0UUlRSDZQWXRnbjRnQm5rb1Nha0pEQWlNU0F3SGdZRFZRUURGQmMxTUM0eApOaTQ1TkM0eE56VkFNVFEyTXpreU9ETTBOSUlKQUxCR0x0NHgzMHZLTUF3R0ExVWRFd1FGTUFNQkFmOHdDd1lEClZSMFBCQVFEQWdFR01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQjNkLyt1eXd1M05iSzdwRGtUOEdDb2l6bnUKLzNoemZjcEJlelJBKzJjZi81Uksva2pBbFNWbzhPaW1NaitlM0lmSnlkb0J3c0Z5U3plZE1YZFMwUkhZVFkyOQpjOWU3ZkNiT1hESDI1UVVBSW5OSWcyeWVYR1NEZnNVcmtYOXZEWDJkVWtmejFUa3pKU3lxa25yZ3pNdnBEN2ZyClpUZWtTN2pEQ1hjNXJ4ZTBGbVlxRFZjQVV3SVRIdFlLZDJhTHB6ZUxFbUNScG5GTTZKQmpiL2xDeHkyRVBPeWMKRS9KU0Z2NzgvblpOYi9vNFlDYVlDNEUvUEdJaUo0Y1U4N3pDZ0Z0R2ZYNGRvNTVGdjVlK3VzaDBuT3BuWFV1TwpQNnBKcmo2RGkvUVBFdmhCL0M3OC8xTjFXRkNOSnB4Yk9WOHl0N3F5bnVldWJSeU1JYUxsOUJQUjVWay8KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://50.16.94.175
+    user: aws_kubernetes
+    token: MvHvDiz9ixYIJmFCHZm4BFgDlKBcS0UZ
+    client_certificate: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURXVENDQWtHZ0F3SUJBZ0lKQUxCR0x0NHgzMHZLTUEwR0NTcUdTSWIzRFFFQkN3VUFNQ0l4SURBZUJnTlYKQkFNVUZ6VXdMakUyTGprMExqRTNOVUF4TkRZek9USTRNelEwTUI0WERURTJNRFV5TWpFME5EVTBOVm9YRFRJMgpNRFV5TURFME5EVTBOVm93SWpFZ01CNEdBMVVFQXhRWE5UQXVNVFl1T1RRdU1UYzFRREUwTmpNNU1qZ3pORFF3CmdnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUN5NnBubjIwSk10c2g5ckFrMGZJY3gKTFJDL2duVUY1WTJaSnFmekRpa3dOeUsydHZnWjVNdk5YZ09FYVdac29TbjNLRmV3cW1NbEJlZUU1VkYvY2NrUgpyMlFxdGtUWjJ3aGVKeXZKa296Uk0vN3J5U3lia2JRbm1BaVlueW5WODEvNFhHbldRT0xEK2o2aHV5eWZIZkZwCmQyZ1plYWo3NnpOTW90dHpnNm5zVXZEcmx2ZFlRcGlVekIxeThBdlRGTUZFNlI0alBwamV1LzVjZnlkYkc0aWwKYzR3d2xaMTU3SC9SNVdueGlIY2xZdHordDZXTzQxQlpBWkR4b0lDWW0zY0JYRFdlWTFhMXJ4K0FUdU1yQWJwZQpoOVRNK1g3WW9DV09kdDl0UDRWQnpTS2hHL1I3YXVzZU5YMFN2NEFEUWFPOXA5U21sdmlKdFFjZjdsdVFFUmN0CkFnTUJBQUdqZ1pFd2dZNHdIUVlEVlIwT0JCWUVGS3pjRHRsNnc5ZXo0UUlRSDZQWXRnbjRnQm5rTUZJR0ExVWQKSXdSTE1FbUFGS3pjRHRsNnc5ZXo0UUlRSDZQWXRnbjRnQm5rb1Nha0pEQWlNU0F3SGdZRFZRUURGQmMxTUM0eApOaTQ1TkM0eE56VkFNVFEyTXpreU9ETTBOSUlKQUxCR0x0NHgzMHZLTUF3R0ExVWRFd1FGTUFNQkFmOHdDd1lEClZSMFBCQVFEQWdFR01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQjNkLyt1eXd1M05iSzdwRGtUOEdDb2l6bnUKLzNoemZjcEJlelJBKzJjZi81Uksva2pBbFNWbzhPaW1NaitlM0lmSnlkb0J3c0Z5U3plZE1YZFMwUkhZVFkyOQpjOWU3ZkNiT1hESDI1UVVBSW5OSWcyeWVYR1NEZnNVcmtYOXZEWDJkVWtmejFUa3pKU3lxa25yZ3pNdnBEN2ZyClpUZWtTN2pEQ1hjNXJ4ZTBGbVlxRFZjQVV3SVRIdFlLZDJhTHB6ZUxFbUNScG5GTTZKQmpiL2xDeHkyRVBPeWMKRS9KU0Z2NzgvblpOYi9vNFlDYVlDNEUvUEdJaUo0Y1U4N3pDZ0Z0R2ZYNGRvNTVGdjVlK3VzaDBuT3BuWFV1TwpQNnBKcmo2RGkvUVBFdmhCL0M3OC8xTjFXRkNOSnB4Yk9WOHl0N3F5bnVldWJSeU1JYUxsOUJQUjVWay8KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
 
     #kube_config_path: ~/.kube/config
-#    kube_selector: app=example-web-app
-#    kube_deploy_image: 703587889398.dkr.ecr.us-east-1.amazonaws.com/example-web-app:v0.1.22   #the image to deploy; take note that this must be a unique image name (e.g. this is usually the '{registry}/{repository}' in ecr where your image is hosted)
-#    kube_rc_path: k8s/example-web-app-rc.yml
-#    kube_dir: k8s
+    kube_selector: app=example-web-app
+    kube_deploy_image: 703587889398.dkr.ecr.us-east-1.amazonaws.com/example-web-app:v0.1.22   #the image to deploy; take note that this must be a unique image name (e.g. this is usually the '{registry}/{repository}' in ecr where your image is hosted)
+    kube_rc_path: k8s/example-web-app-rc.yml
+    kube_dir: k8s
