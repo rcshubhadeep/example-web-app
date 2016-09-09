@@ -1,7 +1,7 @@
 ---
 
 builds:
-  docker_image_name: FreeLunchCI/example-web-app:green
+  docker_image_name: FreeLunchCI/example-web-app:v0.1.15
 
 services:
   db:
@@ -21,9 +21,9 @@ volumes:
 outputs:
 
   - type: ecr
-    image: FreeLunchCI/example-web-app:green
+    image: FreeLunchCI/example-web-app:v0.1.15
     registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com
-    repository: example-web-app:green
+    repository: example-web-app:v0.1.15
 
   - type: kube
     # currently there are two options for defining your kube auth info; config and manual:
