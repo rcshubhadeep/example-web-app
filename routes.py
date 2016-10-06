@@ -1,11 +1,11 @@
 from app import app
 import os
 
-version = os.getenv('VERSION_STR', '0.2.2')
+version = os.getenv('VERSION_STR', '0.2.3')
 
 @app.route('/')
 @app.route('/index')
 def index():
     return "Hello, World! " + version
-    # @TODO we really need to do something in the db here too as its another
-    #       image and we want to show that they are hooked together.
+	# @TODO see the other exampe-* apps for additional examples.
+	# NOTICE: please fork this to your own repo before committing.
