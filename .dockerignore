@@ -5,3 +5,4 @@ docker-compose.yml
 .pycahce
 .venv
 .pyc
+neglect.txt
