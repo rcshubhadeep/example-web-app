@@ -11,7 +11,7 @@ def test_index():
 ## Uncomment the following test case
 #####################################
 
-# def test_make_you_fail():
-#     v = index()
-#     parts = v.split(" ")
-#     assert parts[1] == version
+def test_make_you_fail():
+    v = index()
+    parts = v.split(" ")
+    assert parts[1] == version
