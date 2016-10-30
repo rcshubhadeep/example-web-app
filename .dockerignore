@@ -1,7 +1,4 @@
-.git
+neglect.txt
+neglect2.txt
 .gitignore
-README.md
-docker-compose.yml
-.pycahce
-.venv
-.pyc
+.git
