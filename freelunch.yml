@@ -9,8 +9,8 @@ outputs:
     image: FreeLunchCI/example-web-app
     registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com
     repository: example-web-app
-    ecr_key: aws_access_key_id
-    ecr_secret: aws_secret_access_key
+    ecr_key: $aws_access_key_id
+    ecr_secret: $aws_secret_access_key
 
   - type: kube
     # currently there are two options for defining your kube auth info; config and manual:
@@ -23,8 +23,8 @@ outputs:
     # below was built off of data in engine/outputs/kube.py auth function
     server: https://50.16.94.175
     user: aws_kubernetes
-    token: kube_token
-    client_certificate: kube_client_certificate
+    token: $kube_token
+    client_certificate: $kube_client_certificate
 
     #kube_config_path: ~/.kube/config   #used for config based auth.
     kube_selector: app=example-web-app
