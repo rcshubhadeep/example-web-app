@@ -3,21 +3,6 @@
 builds:
   docker_image_name: FreeLunchCI/example-web-app-1
 
-services:
-  db:
-  image: postgres:9.4.1
-  ports:
-    - "5432:5432"
-web:
-  build: .
-  command: python -u run.py
-  ports:
-    - "5000:5000"
-links:
-  - db
-volumes:
-  - .:/myapp
-
 outputs:
 
   - type: ecr
