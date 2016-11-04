@@ -7,7 +7,7 @@ outputs:
 
   - type: ecr
     image: FreeLunchCI/example-web-app
-    registry: 703587889397.dkr.ecr.us-east-1.amazonaws.com
+    registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com
     repository: example-web-app
     ecr_key: ${aws_access_key_id}
     ecr_secret: ${aws_secret_access_key}
