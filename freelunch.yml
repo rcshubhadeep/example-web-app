@@ -12,6 +12,7 @@ outputs:
     ecr_key: ${aws_access_key_id}
     ecr_secret: ${aws_secret_access_key}
     region: us-east-1
+    tag: latest
 
   - type: kube
     # currently there are two options for defining your kube auth info; config and manual:
@@ -26,6 +27,8 @@ outputs:
     user: aws_kubernetes
     token: ${kube_token}
     client_certificate: ${kube_client_certificate}
+    current_context: aws_kubernetes
+    cluster_name: aws_kubernetes
 
     #kube_config_path: ~/.kube/config   #used for config based auth.
     kube_selector: app=example-web-app
