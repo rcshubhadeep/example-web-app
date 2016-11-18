@@ -25,14 +25,19 @@ outputs:
     # below was built off of data in engine/outputs/kube.py auth function
     server: https://50.16.94.175
     token_user: aws_kubernetes
+    # context_user: aws_kubernetes # If not provided the engine will default it to either token_user or plain_user
+    # plain_user: normal_user_aws
+    # username: admin
+    # password: ${kube_normal_user_pass}
     token: ${kube_token}
     # client_certificate: ${kube_client_certificate} ## It turns out that we do not need this and we MUST supply a client key and certificate authority
     client_key: ${kube_client_certificate}
     certificate_authority: ${kube_client_certificate}
     current_context: aws_kubernetes
     cluster_name: aws_kubernetes
+    #kube_api_version : v1 # If not provided the engine defaults to v1
 
-    #kube_config_path: ~/.kube/config   #used for config based auth.
+    #kube_config_path: ~/.kube/config   #used for config based auth. MUST be relative to the  ROOT of repo dir
     kube_selector: app=example-web-app
     kube_deploy_registry: 703587889398.dkr.ecr.us-east-1.amazonaws.com   # this should match the registry you deploy your image to (e.g. ecr.registry)
     kube_deploy_repository: example-web-app   # this should match the repository within the registry that you deploy your image to (e.g. ecr.repository)
