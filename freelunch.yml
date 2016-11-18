@@ -24,9 +24,9 @@ outputs:
     #    - client_certificate: the kubernetes client certificate (~/.kube/config path: users/user/client-key-data)
     # below was built off of data in engine/outputs/kube.py auth function
     server: https://50.16.94.175
-    user: aws_kubernetes
+    token_user: aws_kubernetes
     token: ${kube_token}
-    # client_certificate: ${kube_client_certificate}
+    # client_certificate: ${kube_client_certificate} ## It turns out that we do not need this and we MUST supply a client key and certificate authority
     client_key: ${kube_client_certificate}
     certificate_authority: ${kube_client_certificate}
     current_context: aws_kubernetes
