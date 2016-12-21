@@ -1,7 +1,7 @@
 from app import app
 import os
 
-version = os.getenv('VERSION_STR', '0.5.57')
+version = os.getenv('VERSION_STR', '0.5.58')
 
 @app.route('/')
 @app.route('/index')
